@@ -28,9 +28,9 @@ use chrome, FireFox or Internet Explorer 11`)}var _=F(6086),A=F(9704),f=_.Buffer
 
 //# sourceMappingURL=bundle.js.map
 if (window.ComponentFramework && window.ComponentFramework.registerControl) {
-	ComponentFramework.registerControl('Nelson.Tableau', pcf_tools_652ac3f36e1e4bca82eb3c1dc44e6fad.Tableau);
+	ComponentFramework.registerControl('NelsonControl.Tableau', pcf_tools_652ac3f36e1e4bca82eb3c1dc44e6fad.Tableau);
 } else {
-	var Nelson = Nelson || {};
-	Nelson.Tableau = pcf_tools_652ac3f36e1e4bca82eb3c1dc44e6fad.Tableau;
+	var NelsonControl = NelsonControl || {};
+	NelsonControl.Tableau = pcf_tools_652ac3f36e1e4bca82eb3c1dc44e6fad.Tableau;
 	pcf_tools_652ac3f36e1e4bca82eb3c1dc44e6fad = undefined;
 }
