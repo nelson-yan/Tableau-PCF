@@ -1,0 +1,2 @@
+D:\PCF\Tableau\obj\Debug\Tableau.pcfproj.AssemblyReference.cache
+D:\PCF\Tableau\obj\Debug\Tableau.pcfproj.CoreCompileInputs.cache
