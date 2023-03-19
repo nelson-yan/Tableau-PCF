@@ -2,7 +2,7 @@
 
 PowerApps has native support for embedding Power BI reports and dashboards. However, if your organization uses both Tableau and PowerApps, embedding Tableau dashboards can be a challenge since it is not natively supported.
 
-Follow below steps to use the Tableau PCF component to seamlessly embed a Tableau dashboard within PowerApps without requiring users to log in (Connected App Method).
+Follow below steps to use the Tableau PCF component to seamlessly embed a Tableau dashboard within PowerApps without requiring users to log in ([Connected App Method](https://help.tableau.com/current/online/en-us/connected_apps_direct.htm)).
 
 ![image](https://user-images.githubusercontent.com/66454128/226165825-af736dc1-3d66-4f22-a995-db71d67eb249.png)
 
