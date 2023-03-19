@@ -8,15 +8,15 @@ Follow below steps to use the Tableau PCF component to seamlessly embed a Tablea
 
 ## Prerequisites
 
-- Code component feature is enabled in your PowerApps environment. 🔗
-- Tableau component solution 🔗
+- Code component feature is enabled in your PowerApps environment. [🔗](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature)
+- Tableau component solution [🔗](https://github.com/nelson-yan/Tableau-PCF/releases/tag/v1.0.0)
 - Tableau Site Admin Role or higher
 - Tableau 22.1 version or later, for Connected App UI
-- Or Tableau 21.4 version or later, for Connected App API
+- Or Tableau 21.4 version or later, for [Connected App API](https://help.tableau.com/v2021.4/api/rest_api/en-us/REST/rest_api_ref_connected_app.htm)
 
 ## Install Tableau component
 
-To get started, download the Tableau component managed solution from GitHub and import it into your PowerApps environment. Then, create a blank Canvas App and import the Tableau component into your app. After Tableau compoent is added into canvas, and you’ll find some properties under Properties tab awaiting configurations from tableau.
+To get started, download the Tableau component managed solution from GitHub and import it into your PowerApps environment. Then, create a blank Canvas App and import the Tableau component into your app. After Tableau compoent is added into canvas, and you’ll find some properties under Properties tab awaiting you to configure from tableau.
 
 ![image](https://user-images.githubusercontent.com/66454128/226165513-2376e31c-d70e-45ef-9409-d4d7b6460391.png)
 
