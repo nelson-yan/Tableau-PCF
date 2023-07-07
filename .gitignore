@@ -17,7 +17,7 @@
 *.binlog
 
 # Solution directory
-/Solution
+/Solutions
 
 # VS file
 /.vs
