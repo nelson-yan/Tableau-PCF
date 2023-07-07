@@ -24,6 +24,7 @@ export class Tableau implements ComponentFramework.StandardControl<IInputs, IOut
     private _source: string;
     private _device: string;
     private _hidetabs: boolean;
+    private _toolbar: string;
     //private _iat: Date;
     //private _exp: Date;
 
@@ -77,7 +78,7 @@ export class Tableau implements ComponentFramework.StandardControl<IInputs, IOut
             this._secretId !== context.parameters.secretId.raw && !!context.parameters.secretId.raw ||
             this._source !== context.parameters.source.raw && !!context.parameters.source.raw ||
             this._device !== context.parameters.device.raw && !!context.parameters.device.raw ||
-            this._hidetabs !== context.parameters.hidetabs.raw;
+            this._hidetabs !== context.parameters.hidetabs.raw || this._toolbar !== context.parameters.toolbar.raw;
 
         if (this._controlParamChanged) {
 
@@ -94,7 +95,7 @@ export class Tableau implements ComponentFramework.StandardControl<IInputs, IOut
     private renderTableauViz(context: ComponentFramework.Context<IInputs>): void {
 
         if(context.parameters.username.raw !=="" && context.parameters.clientId.raw !=="" && context.parameters.secret.raw!=="" && 
-        context.parameters.secretId.raw !==""&& context.parameters.source.raw !==""&& context.parameters.device.raw !==""){
+        context.parameters.secretId.raw !==""&& context.parameters.source.raw !==""&& context.parameters.device.raw !=="" ){
 
             console.log("--- Token refreshed! ---");
 
@@ -105,11 +106,12 @@ export class Tableau implements ComponentFramework.StandardControl<IInputs, IOut
             this._source = context.parameters.source.raw || "";
             this._device = context.parameters.device.raw || "";
             this._hidetabs = context.parameters.hidetabs.raw;
+            this._toolbar = context.parameters.toolbar.raw || "";
 
 
             this._viz.src = this._source;
             this._viz.device = this._device;
-            this._viz.toolbar = "hidden";
+            this._viz.toolbar = this._toolbar;
 
             this._hidetabs ? this._viz.setAttribute("hide-tabs", this._hidetabs) : this._viz.removeAttribute('hide-tabs');
             

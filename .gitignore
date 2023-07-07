@@ -15,3 +15,8 @@
 
 # MSBuild Binary and Structured Log
 *.binlog
+
+# Solution directory
+/Solution
+
+/.vs

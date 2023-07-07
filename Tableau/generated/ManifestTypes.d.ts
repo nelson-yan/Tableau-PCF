@@ -11,13 +11,7 @@ export interface IInputs {
     username: ComponentFramework.PropertyTypes.StringProperty;
     device: ComponentFramework.PropertyTypes.StringProperty;
     hidetabs: ComponentFramework.PropertyTypes.TwoOptionsProperty;
+    toolbar: ComponentFramework.PropertyTypes.EnumProperty<"top" | "bottom" | "hidden">;
 }
 export interface IOutputs {
-    source?: string;
-    clientId?: string;
-    secretId?: string;
-    secret?: string;
-    username?: string;
-    device?: string;
-    hidetabs?: boolean;
 }
